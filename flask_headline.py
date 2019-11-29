@@ -12,3 +12,8 @@ def hello(name):
     name = name.capitalize()
     headline = name
     return render_template("hello.html", headline=headline)
+
+@app.route("/bye")
+def bye():
+    headline="Goodbye!"
+    return render_template("hello.html", headline=headline)
