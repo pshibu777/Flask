@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>more page</title>
+  </head>
+  <body>
+    {% extends "layout.html" %}
+    {% block heading %}
+    Seound page
+    {% endblock %}
+    {% block body %}
+    <p>This is the second page</p>
+    <a href="{{ url_for('index') }}">See more...</a>
+    {% endblock %}
+  </body>
+</html>
