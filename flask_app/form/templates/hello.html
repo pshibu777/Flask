@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello html</title>
+  </head>
+  <body>
+    {% extends "layout.html" %}
+    {% block head %} Hello! {% endblock %}
+    {% block body %}
+          hello, {{name}}!
+    {% endblock %}
+  </body>
+</html>
