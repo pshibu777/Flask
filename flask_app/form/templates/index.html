@@ -6,7 +6,7 @@
   </head>
   <body>
     {% extends "layout.html" %}
-    {% bloch head %} Enter the name {% endblock %}
+    {% block head %} Enter the name {% endblock %}
     {% block body %}
     <form action="{{ url_for ('hello') }}" method="post">
       <input type="text" name="name" placeholder="Enter name">
